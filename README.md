@@ -1,52 +1,70 @@
-# Set up CI/CD Pipeline to deploy app to AWS EKS
+# Set up Gitlab CI/CD Pipeline to deploy app to AWS EKS
+> Deploy an application on AWS EKS using a GitLab CI/CD pipeline with a test integration of a Security as Code tool to automatically scan configuration files for potential security and compliance issues.
 
-# This repository contains configuration files and scripts used to set up a CI/CD pipeline that deploys a python web application on AWS EKS
+## Table of Contents
+* [Directory structure](#directory-structure)
+* [Technologies Used](#technologies-used)
+* [Architecture](#architecture)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-![Pipeline Image](./gitlab-ci.png "Pipeline")
 
-## Structure of the git repository
+## Directory structure
 
-..
+```bash
 
 ├── Dockerfile
-
 ├── .gitlab-ci.yml
-
 ├── .k8s
-
 │   ├── deployment.yaml
-
 │   └── services.yaml
-
 └── src
-
 	├── app.py
-
 	└── requirements.txt
+```
+
+The application files and the Kubernetes configurations are respectively in the **src** and **.k8s** directories. and the Dockerfile and the GitLab-ci script are at the root of the directory.
 
 
 
-* The src folder contains the python application and the requirement.txt
-* The .k8s folder contains the kubernetes manifiest files
-* The .gitlab-ci.yml and Dockerfile contain respectively the instructions for running the pipeline and containerization of the application.
+## Technologies Used
+- AWS
+- Kubernetes
+- Docker
+- Gitlab CI
+- python
+- Gitlab
+- Checkov
 
 
-## The .gitlab-ci.yml contains variables that you must define in your gitlab repo before continuing.
-
-These variables are as follows: \
 
 
+## Architecture
+![Pipeline Image](./gitlab-ci.png "Pipeline")
 
 
-* **${CI_REGISTRY_USER}**: This variable is a GitLab CI/CD predefined variable that contains the username used to authenticate with Container Registry, it can be docker hub, gitlab registry or whatever you want
-* **${CI_REGISTRY_PASSWORD}**: This variable is a GitLab CI/CD predefined variable that contains the password used to authenticate with the Container Registry..
-* **${CI_REGISTRY_IMAGE}:** This variable is a GitLab CI/CD predefined variable that contains the name of the Docker image in the Container Registry.
-* **${CI_REGISTRY_IMAGE_VERSION**}: This variable is a GitLab CI/CD predefined variable that contains the version or tag of the Docker image in the Container Registry.
-* **${AWS_ACCESS_KEY_ID}**: This variable contains the access key ID for the AWS account used to deploy the application.
-* **${AWS_SECRET_ACCESS_KEY}**: This variable contains the secret access key for the AWS account used to deploy the application.
-* **${AWS_DEFAULT_REGION}:** This variable contains the AWS region where the application will be deployed.
-* **${KUBECONFIG}**: This variable of type file  contains the Kubernetes configuration file used to authenticate with the K8s cluster. this file is available at this path ~/.kube/config
+## Setup
+Read this [article](https://www.linkedin.com/in/kodjovi-david-woglo/) for the set up
 
-Once all these parameters are well defined you can proceed with the deployment, here is a guide to inspire you.
 
+
+
+## Project Status
+Project is: _complete_ .
+
+
+## Room for Improvement
 I remain open to any contribution and suggestion to improve my work. Do not hesitate to let me know your contribution or suggestion by opening an issue.
+
+
+## Contact
+Created by [@David WOGLO ](https://www.linkedin.com/in/kodjovi-david-woglo/) - feel free to contact me!
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
