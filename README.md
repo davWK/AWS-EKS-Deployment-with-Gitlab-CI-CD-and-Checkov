@@ -47,13 +47,13 @@ The application files and the Kubernetes configurations are respectively in the 
 
 
 ## Setup
-Read this [article](https://www.linkedin.com/in/kodjovi-david-woglo/) for the set up
+Read this [article](https://hashnode.com/preview/6405d07efd7a640008cfd4cb) for the set up
 
 
 
 
 ## Project Status
-Project is: _complete_ .
+Project is: _in progess_ .
 
 
 ## Room for Improvement
