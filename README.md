@@ -47,7 +47,7 @@ The application files and the Kubernetes configurations are respectively in the 
 
 
 ## Setup
-Read this [article](https://hashnode.com/preview/6405d07efd7a640008cfd4cb) for the set up
+Read this [article](https://blog.davidwoglo.me/deploying-and-securing-an-app-on-aws-eks-with-gitlab-cicd-and-checkov) for the set up
 
 
 
