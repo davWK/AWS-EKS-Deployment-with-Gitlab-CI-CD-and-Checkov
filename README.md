@@ -53,7 +53,7 @@ Read this [article](https://blog.davidwoglo.me/deploying-and-securing-an-app-on-
 
 
 ## Project Status
-Project is: _mo longer maintained_ .
+Project is: _no longer maintained_ .
 
 
 ## Room for Improvement
